@@ -1,3 +1,5 @@
-# ${project_name}
+# ${next-stack-boilerplate}
+
 ## Description
-${project_description}
+
+my next-stack structure boilerplate
