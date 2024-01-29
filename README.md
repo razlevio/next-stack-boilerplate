@@ -51,3 +51,13 @@ This repository contains the structure of my personalized tech-stack using next.
 - **Husky**: A tool to improve your commits using Git hooks.
 - **Lint-staged**: A library to run scripts on staged files in Git.
 - **Commitlint**: A tool for enforcing a conventional commit format.
+
+## Project Setup
+To set up the project and update dependencies to their latest versions, run the following command:
+
+```bash
+npm install -g ts-node
+ts-node setup.ts
+```
+
+This process will ensure that your project dependencies are up-to-date.
