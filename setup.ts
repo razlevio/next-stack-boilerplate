@@ -8,8 +8,8 @@ async function updateDependencies() {
   console.log("Updating dependencies to their latest versions...");
 
   try {
-    // Install npm-check-updates package globally
-    await execAsync("npm install -g npm-check-updates");
+		// Install base dependencies and npm-check-updates
+		await execAsync("npm install && npm install -g npm-check-updates ts-node");
 
     // Run npm-check-updates with -u to update package.json
     await execAsync("ncu -u");

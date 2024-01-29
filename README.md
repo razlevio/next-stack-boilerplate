@@ -56,7 +56,7 @@ This repository contains the structure of my personalized tech-stack using next.
 To set up the project and update dependencies to their latest versions, run the following command:
 
 ```bash
-npm install -g ts-node
+npm install
 ts-node setup.ts
 ```
 
