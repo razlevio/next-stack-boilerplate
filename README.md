@@ -61,3 +61,6 @@ ts-node setup.ts
 ```
 
 This process will ensure that your project dependencies are up-to-date.
+
+Lastly update `.env.example -> .env` and add
+required keys
