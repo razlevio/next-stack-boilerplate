@@ -17,19 +17,6 @@ async function updateDependencies() {
 		// Install updated dependencies
 		await execAsync("npm install")
 
-		// Install and configure husky
-		await execAsync("npm install -D husky")
-		await execAsync("npx husky-init && npm install")
-		await execAsync(
-			'jq \'.scripts.test = "echo "No tests specified" && exit 0"\' package.json > temp.json && mv temp.json package.json'
-		)
-		await execAsync(
-			"npx husky add .husky/commit-msg 'npx commitlint --edit \"$1\"'"
-		)
-		await execAsync(
-			"npx husky add .husky/pre-commit 'npx lint-staged --concurrent false'"
-		)
-
 		console.log("Dependencies successfully updated.")
 	} catch (error) {
 		console.error("Failed to update dependencies:", error)
